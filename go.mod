@@ -1,3 +1,3 @@
 module github.com/chai2010/ui.go
 
-go 1.24.2
+go 1.17
