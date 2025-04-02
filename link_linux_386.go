@@ -1,10 +1,10 @@
-// +build !windows
-// +build !darwin
+//go:build !windows && !darwin
+// +build !windows,!darwin
 
 // 11 december 2015
 
 package ui
 
-// #cgo LDFLAGS: ${SRCDIR}/libui_linux_386.a -lm -ldl
+// #cgo LDFLAGS: -lm -ldl
 // #cgo pkg-config: gtk+-3.0
 import "C"
