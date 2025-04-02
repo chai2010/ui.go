@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/andlabs/ui"
+	"github.com/chai2010/ui.go"
 )
 
 // Example showing how to update the UI using the QueueMain function

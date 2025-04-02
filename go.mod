@@ -1,3 +1,3 @@
-module github.com/andlabs/ui
+module github.com/chai2010/ui.go
 
 go 1.24.2

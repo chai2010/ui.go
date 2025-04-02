@@ -13,8 +13,8 @@ import (
 	"image/draw"
 	_ "image/png"
 
-	"github.com/andlabs/ui"
-	_ "github.com/andlabs/ui/winmanifest"
+	"github.com/chai2010/ui.go"
+	_ "github.com/chai2010/ui.go/winmanifest"
 )
 
 type modelHandler struct {

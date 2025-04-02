@@ -23,7 +23,7 @@ Package ui is currently **mid-alpha** software. Much of what is currently presen
 Once you have the dependencies installed, a simple
 
 ```
-go get github.com/andlabs/ui/...
+go get github.com/chai2010/ui.go/...
 ```
 
 should suffice.
@@ -41,7 +41,7 @@ Package ui requires a manifest that specifies Common Controls v6 to run on Windo
 The simplest option is provided as a subpackage `winmanifest`; you can simply import it without a name, and it'll set things up properly:
 
 ```go
-import _ "github.com/andlabs/ui/winmanifest"
+import _ "github.com/chai2010/ui.go/winmanifest"
 ```
 
 You do not have to worry about importing this in non-Windows-only files; it does nothing on non-Windows platforms.
