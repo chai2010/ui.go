@@ -28,6 +28,7 @@ func genCommonCFiles() {
 		}
 		newname := fmt.Sprintf("zz_libui_common_%s", filepath.Base(s))
 		code := fmt.Sprintf("#include \"./internal/libui/common/%s\"", filepath.Base(s))
+		code += fmt.Sprintln()
 		os.WriteFile(newname, []byte(code), 0666)
 	}
 }
@@ -44,8 +45,8 @@ func genDarwinCppFiles() {
 		code += fmt.Sprintln("// +build darwin")
 		code += fmt.Sprintln("//go:build darwin")
 		code += fmt.Sprintln()
-
 		code += fmt.Sprintf("#include \"./internal/libui/darwin/%s\"", filepath.Base(s))
+		code += fmt.Sprintln()
 		os.WriteFile(newname, []byte(code), 0666)
 	}
 }
@@ -63,6 +64,7 @@ func genLinuxCppFiles() {
 		code += fmt.Sprintln("//go:build linux")
 		code += fmt.Sprintln()
 		code += fmt.Sprintf("#include \"./internal/libui/unix/%s\"", filepath.Base(s))
+		code += fmt.Sprintln()
 		os.WriteFile(newname, []byte(code), 0666)
 	}
 }
@@ -80,6 +82,7 @@ func genWindowsCppFiles() {
 		code += fmt.Sprintln("//go:build windows")
 		code += fmt.Sprintln()
 		code += fmt.Sprintf("#include \"./internal/libui/windows/%s\"", filepath.Base(s))
+		code += fmt.Sprintln()
 		os.WriteFile(newname, []byte(code), 0666)
 	}
 }
